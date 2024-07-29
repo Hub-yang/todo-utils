@@ -1,0 +1,17 @@
+{
+  "name": "todo-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "packageManager": "pnpm@9.0.6",
+  "description": "Some easy-to-use tool functions",
+  "author": "Hubery Yang",
+  "license": "MIT",
+  "homepage": "",
+  "repository": {
+    "type":"git",
+    "url": ""
+  },
+  "bugs": {},
+  "scripts": {
+  }
+}
