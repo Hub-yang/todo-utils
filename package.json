@@ -1,17 +1,27 @@
 {
   "name": "todo-utils",
   "version": "1.0.0",
-  "main": "index.js",
   "packageManager": "pnpm@9.0.6",
   "description": "Some easy-to-use tool functions",
   "author": "Hubery Yang",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/Hub-yang/todo-utils#readme",
   "repository": {
-    "type":"git",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/Hub-yang/todo-utils.git"
   },
-  "bugs": {},
+  "bugs": {
+    "url": "https://github.com/Hub-yang/todo-utils.git/issues"
+  },
+  "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "taze": "npx taze major -r"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.25.1",
+    "eslint": "9.5.0",
+    "typescript": "^5.5.4"
   }
 }
