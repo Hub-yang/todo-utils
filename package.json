@@ -19,14 +19,29 @@
     "typescript",
     "library"
   ],
+  "exports": {
+    "./is": {
+      "types": "./dist/is/index.d.ts",
+      "import": "./dist/is/index.mjs",
+      "require": "./dist/is/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsdown",
+    "build:prod": "nr typecheck && nr lint:fix && nr test && tsdown",
     "dev": "tsdown --watch",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "release": "nr build:prod && bumpp && npm publish",
     "prepare": "husky",
     "commitlint": "commitlint --edit"
   },
@@ -36,6 +51,7 @@
     "@commitlint/config-conventional": "^20.5.3",
     "@huberyyang/todo-scripts": "latest",
     "@types/node": "^25.6.0",
+    "bumpp": "^11.0.1",
     "eslint": "^10.3.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
