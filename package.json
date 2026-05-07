@@ -48,9 +48,6 @@
     "prepare": "husky",
     "commitlint": "commitlint --edit"
   },
-  "dependencies": {
-    "@huberyyang/todo-utils": "1.0.0-beta.1"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^8.2.0",
     "@commitlint/cli": "^20.5.3",
