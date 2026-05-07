@@ -1,7 +1,7 @@
 {
   "name": "@huberyyang/todo-utils",
   "type": "module",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "packageManager": "pnpm@11.0.7",
   "description": "⚡️A useful utils function library, very fast",
   "author": "HuberyYang",
