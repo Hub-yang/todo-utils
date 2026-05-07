@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@huberyyang/todo-utils':
+        specifier: 1.0.0-beta.1
+        version: 1.0.0-beta.1
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^8.2.0
@@ -331,6 +335,9 @@ packages:
     resolution: {integrity: sha512-ENN/+k55mrC0Ry5+nfVK8Z8P5CqpDRsGJSPhu7D2Ph1s0Q9PXoBcGJuT0LCnhT526knScEYu1V9ti3DD+Qc7hw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
+
+  '@huberyyang/todo-utils@1.0.0-beta.1':
+    resolution: {integrity: sha512-YCQNIHLa2dIO62rEWxtDgDvGqDGoLfh2p6iq01MOMdzlVrftE8wEqLXj0CfQojP7LFi7VKfhSC8WO+6hZ+euDw==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -2577,6 +2584,8 @@ snapshots:
       levn: 0.4.1
 
   '@huberyyang/todo-scripts@1.0.12': {}
+
+  '@huberyyang/todo-utils@1.0.0-beta.1': {}
 
   '@humanfs/core@0.19.2':
     dependencies:

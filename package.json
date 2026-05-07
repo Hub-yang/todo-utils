@@ -20,15 +20,18 @@
     "library"
   ],
   "exports": {
-    "./is": {
-      "types": "./dist/is/index.d.ts",
-      "import": "./dist/is/index.mjs",
-      "require": "./dist/is/index.cjs"
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
@@ -44,6 +47,9 @@
     "release": "nr build:prod && bumpp && npm publish",
     "prepare": "husky",
     "commitlint": "commitlint --edit"
+  },
+  "dependencies": {
+    "@huberyyang/todo-utils": "1.0.0-beta.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^8.2.0",
